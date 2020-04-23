@@ -1,4 +1,4 @@
-FROM golang:alpine
+FROM golang:latest
 
 MAINTAINER ismeade <ismeade99@sina.com>
 

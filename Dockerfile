@@ -1,5 +1,7 @@
-FROM ismeade/debian:jessie
+FROM golang:alpine
 
 MAINTAINER ismeade <ismeade99@sina.com>
 
-#See branch
+RUN go get golang.org/x/tools/cmd/godoc
+
+CMD ["godoc", "-http", ":8080"]
